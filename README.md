@@ -335,7 +335,7 @@ Add the package to your PYTHONPATH, e.g. `PYTHONPATH=$PYTHONPATH:/home/magnus/sr
     Installed in ./bin
     rmsd_calc_to_target.py
 
-to make links of utils to `./bin`.
+to make links of utils to `./bin`. @todo
 
 ## Requirement
 
