@@ -1,6 +1,8 @@
 #!/usr/bin/env python
+#UsageCopy and paste your sequence : GGGUCAGGCCGGCGAAAGUCGCCACAGUUUGGGGAAAGCUGUGCAGCCUGUAACCCCCCCACGAAAGUGGG
 
 import urllib2
+Seq = raw_input('Copy and paste your sequence :')
 
 class BlastPDB:
     """BlastPDB
@@ -17,6 +19,6 @@ class BlastPDB:
         self.result = p.read()
 
 if __name__ == '__main__':
-    p = BlastPDB('GGGUCAGGCCGGCGAAAGUCGCCACAGUUUGGGGAAAGCUGUGCAGCCUGUAACCCCCCCACGAAAGUGGG')
+    p = BlastPDB(Seq)
     p.search()
     print(p.result)
